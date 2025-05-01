@@ -45,8 +45,7 @@ Une application moderne pour gérer les commandes d'un **coffee shop** ☕, offr
 
 ```bash
 # 1. Cloner le dépôt
-git clone https://github.com/ton-utilisateur/coffee-shop-app.git
-
+git clone https://github.com/Sara-Mediouni/Bean.git
 # 2. Accéder au projet
 cd bean
 
