@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme{
+  --color-blue-500:#0d1b2a;
+  --color-brown-500:#4b362e;
+  --color-orange-500:#e76f51;
+}
+
+@layer utilities {
+    .img-shadow{
+        box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .img-shadow2{
+        filter: drop-shadow(10px 30px 15px #3030307a);
+    }
+}
+
+@keyframes float3D {
+    0% { transform: translateY(0) rotateX(0deg) rotateY(0deg); }
+    50% { transform: translateY(-10px) rotateX(2deg) rotateY(-2deg); }
+    100% { transform: translateY(0) rotateX(0deg) rotateY(0deg); }
+  }
+  
+  .animate-float3D {
+    animation: float3D 5s ease-in-out infinite;
+  }
+  
+  @keyframes pulse-slow {
+    0%, 100% { transform: scale(1); opacity: 0.4; }
+    50% { transform: scale(1.05); opacity: 0.6; }
+  }
+  body{
+    background-color: #FFE5D9;
+    overflow-x:hidden;
+  }
+  .animate-pulse-slow {
+    animation: pulse-slow 6s infinite;
+  }
+  @keyframes float3D {
+    0% { transform: translateY(0px) rotateZ(0deg); }
+    50% { transform: translateY(-10px) rotateZ(1.5deg); }
+    100% { transform: translateY(0px) rotateZ(0deg); }
+  }
+  
+  .animate-float3D {
+    animation: float3D 4.5s ease-in-out infinite;
+  }
+  
