@@ -3,21 +3,27 @@ import { assets } from '../assets/assets';
 
 const Contact = () => {
   const products=[{
-    img:assets.smoothies,
-    name:"Frappuccino caramel",
-    price:"8.25 TND"
-
+    img:assets.caramel,
+    name:"Toffe Nut Latte",
+    price:"8.25 TND",
+    rating:"8.1",
+    color: 'bg-[#D8E2DC]',
   },
   {
-    img:assets.starbucks,
-    name:"Frappuccino caramel",
-    price:"8.25 TND"
-
+    img:assets.milkboba,
+    name:"Taro milk tea with Boba",
+    price:"8.25 TND",
+    rating:"7.1", 
+    color: 'bg-[#FFCAD4]',
+    
   },
   {
-    img:assets.boba,
-    name:"Frappuccino caramel",
-    price:"8.25 TND"
+    img:assets.milkmatcha,
+    name:"Milk matcha with smoothie",
+    rating:"9.1",
+    price:"8.25 TND",
+    color: 'bg-[#FFE5D9]',
+   
 
   }]
   return (
@@ -31,9 +37,9 @@ const Contact = () => {
               key={idx}
               className="flex flex-col items-center space-y-4"
             >
-              <div className={`w-[240px] h-[240px] rounded-full flex items-center justify-center bg-[#FFCAD4] relative`}>
+              <div className={`w-[240px] h-[240px] rounded-full flex items-center justify-center ${product.color} relative`}>
                 <img src={product.img} alt={product.name} className="w-[300px]" />
-                <div className="absolute top-2 right-2 bg-white px-3 py-1 rounded-full text-sm font-semibold shadow">
+                <div className="absolute top-2 right-2 bg-white px-3 py-1 rounded-full text-sm font-semibold text-black shadow">
                   ⭐ {product.rating}
                 </div>
               </div>

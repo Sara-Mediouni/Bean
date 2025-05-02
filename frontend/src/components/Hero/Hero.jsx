@@ -46,7 +46,6 @@ const Hero = () => {
     <div className='bg-orange-500  overflow-hidden rounded-full h-[300px] md:h-[400px] md:w-[400px] w-[300px] '>
     
     <img src={assets.starbucks} className='h-[500px] -translate-y-10 w-[500px]'/>
-    <img src={assets.logo} className='absolute top-4 right-4 w-20 md:w-24 lg:w-28'/>
     </div>
     </div>
     <div className='md:text-start  flex flex-col justify-center items-center max-w-5xl px-10'>

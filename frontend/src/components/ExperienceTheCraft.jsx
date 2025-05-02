@@ -21,7 +21,7 @@ const ExperienceCraft = () => {
   const words = sentence.split(" ")
 
   return (
-    <section className=" text-white py-32 flex flex-col items-center justify-center">
+    <section className=" text-white py-12 flex flex-col items-center justify-center">
       <h2 className="text-5xl md:text-7xl font-extrabold mb-10">
         Experience the Craft
       </h2>

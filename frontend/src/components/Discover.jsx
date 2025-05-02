@@ -2,6 +2,7 @@ import React from 'react'
 import CoffeeBlend1 from '../assets/coffee/coffee1.png' // Remplace par ton image
 import CoffeeBlend2 from '../assets/coffee/coffee1.png'
 import {motion} from 'framer-motion'
+import { assets } from '../assets/assets'
 const DiscoverBlends = () => {
   return (
     <section className=" py-20">
@@ -33,7 +34,7 @@ const DiscoverBlends = () => {
             transition={{ duration: 1, delay: 0.3 }}
           >
             <img 
-              src={CoffeeBlend1} 
+              src={assets.espressoblend} 
               alt="Blend 1" 
               className="w-full h-[400px] object-cover group-hover:scale-110 transition-transform duration-700"
             />
@@ -53,7 +54,7 @@ const DiscoverBlends = () => {
             transition={{ duration: 1, delay: 0.6 }}
           >
             <img 
-              src={CoffeeBlend2} 
+              src={assets.caramelblend} 
               alt="Blend 2" 
               className="w-full h-[400px] object-cover group-hover:scale-110 transition-transform duration-700"
             />

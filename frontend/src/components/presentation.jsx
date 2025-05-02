@@ -1,13 +1,14 @@
 import React from 'react'
+import { assets } from '../assets/assets'
 
-import icedCoffee from '../assets/coffees.png';
+
 const Pastry = () => {
   return (
     <section className="px-10 grid md:grid-cols-2 mx-auto">
       {/* Floating coffee image */}
        <div className=" right-10 flex justify-center items-center z-10">
          <img
-           src={icedCoffee}
+           src={assets.goldenlatte}
            alt="Iced Coffee"
            className="w-[300px] md:w-[400px] lg:w-[500px] animate-float3D drop-shadow-[0_30px_20px_rgba(0,0,0,0.5)]"
          />
