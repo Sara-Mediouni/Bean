@@ -37,7 +37,7 @@ Une application moderne pour gérer les commandes d'un **coffee shop** ☕, offr
 
 ## 📸 **Aperçu**
 
-> ![Preview](https://bean-cwax.vercel.app)
+> (https://bean-cwax.vercel.app)
 
 ---
 
