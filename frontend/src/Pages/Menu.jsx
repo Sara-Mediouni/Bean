@@ -16,7 +16,10 @@ const MenuPage = () => {
   const [Categories, setCategories] = useState()
   const [selectedProduct, setSelectedProduct] = useState(null);
   const getDrinks=()=>{
-    axios.get(`http://localhost:4000/api/drink/category/${category}`)
+    const url = category
+    ? `http://localhost:4000/api/drink/category/${category}`
+    : `http://localhost:4000/api/drink`;
+    axios.get(url)
     .then((response)=>{
       console.log(response);
       setDrink(response.data)
